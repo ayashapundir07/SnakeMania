@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap');
+*{
+    padding:0;
+    margin:0;
+}
+
+.body{
+    background: url("../bg.jpg");
+    min-height: 100vh;/*viewport height*/
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#scoreBox{
+    position: absolute;
+    top:15px;
+    left:45px;
+    font-size: 40px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+#hiscoreBox{
+    position: absolute;
+    top:60px;
+    left:45px;
+    font-size: 40px;
+    font-family: 'Rubik Gemstones', cursive;
+}
+#board{
+    background: linear-gradient(rgb(170,236,170), rgb(236,236,167));
+    width: 90vmin;/*among the vh and vw the one which is smaller*/
+    height: 92vmin;
+    border : 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(214, 109, 109),rgb(220, 220, 80));
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius: 12px;
+}
+.snake{
+    background-color: purple;
+    border : .25vmin solid white;
+    border-radius: 15px;
+}
+
+.food{
+    border : .25vmin solid rgb(209, 245, 30);
+    background: rgb(15, 108, 22);
+    border-radius: 8px;
+}
